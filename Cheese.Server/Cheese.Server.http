@@ -1,0 +1,6 @@
+@Cheese.Server_HostAddress = http://localhost:5207
+
+GET {{Cheese.Server_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
