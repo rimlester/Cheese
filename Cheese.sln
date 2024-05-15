@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cheese.Server", "Cheese.Ser
 EndProject
 Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "cheese.client", "cheese.client\cheese.client.esproj", "{D8E69817-A0EA-4CFE-8CE9-DF7F903389F1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheeseTests", "CheeseTests\CheeseTests.csproj", "{4647E7D2-6CBA-4F98-805C-DA249884050E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +25,10 @@ Global
 		{D8E69817-A0EA-4CFE-8CE9-DF7F903389F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D8E69817-A0EA-4CFE-8CE9-DF7F903389F1}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D8E69817-A0EA-4CFE-8CE9-DF7F903389F1}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{4647E7D2-6CBA-4F98-805C-DA249884050E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4647E7D2-6CBA-4F98-805C-DA249884050E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4647E7D2-6CBA-4F98-805C-DA249884050E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4647E7D2-6CBA-4F98-805C-DA249884050E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

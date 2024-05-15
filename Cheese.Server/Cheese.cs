@@ -13,6 +13,11 @@ namespace Cheese.Server
         public Guid Id { get; set; }
 
         /// <summary>
+        /// Name of the Cheese
+        /// </summary>
+        public string Name { get; set; }       
+
+        /// <summary>
         /// per kilo, aud
         /// </summary>
         public decimal Price { get; set; }
@@ -23,7 +28,7 @@ namespace Cheese.Server
         public string Url { get; set; }
 
         /// <summary>
-        /// Cheese Description. Copied from wikipedia since this is non commerical
+        /// Cheese Description. (Probably) copied from wikipedia since this is non commerical
         /// </summary>
         public string Description { get; set; }
     }

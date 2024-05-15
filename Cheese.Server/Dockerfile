@@ -31,6 +31,17 @@ FROM build AS publish
 ARG BUILD_CONFIGURATION=Release
 RUN dotnet publish "./Cheese.Server.csproj" -c %BUILD_CONFIGURATION% -o /app/publish /p:UseAppHost=false
 
+#didn't get this to work - evidently the react app - which was running outside the image - is connecting to a non-exposed port.
+#Could hardcode for a single run, but wanted to figure out what the issue was
+#Also ran in to issues with https 
+#FROM node:18 AS build-web
+#COPY ./cheese.client/package.json /cheese.client/package.json
+#COPY ./cheese.client/package-lock.json /cheese.client/package-lock.json
+#WORKDIR /cheese.client
+#RUN npm ci
+#COPY ./cheese.client/ /cheese.client
+#RUN npm run build
+
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
